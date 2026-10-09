@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Ibraheem | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">Ahmad Ibraheem</h2>
+    <button class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="small-text">Hello, I am</p>
+      <h1>Ahmad Ibraheem</h1>
+      <h3><span id="typed"></span><span class="cursor">|</span></h3>
+      <p class="intro">
+        I build clean, simple and good looking websites using HTML and CSS.
+        I am always learning and trying to make something better every day.
+      </p>
+      <a href="#projects" class="button">View My Work</a>
+      <a href="#contact" class="button button-outline">Contact Me</a>
+    </div>
+    <img src="profile.jpg" alt="Ahmad Ibraheem" class="profile-pic">
+  </section>
+
+  <section id="about">
+    <h2 class="reveal">About Me</h2>
+    <p class="reveal">
+      My name is Ahmad Ibraheem and I am a beginner web developer from Wah Cantt, Pakistan.
+      I enjoy turning ideas into real websites. I started learning HTML and CSS and
+      now I love designing pages that look neat on both computers and phones.
+      I also have experience in the field of Data Analysis and Robotics.
+    </p>
+    <div class="facts">
+      <div class="fact reveal">
+        <h3 class="count" data-to="3" data-suffix="+">0</h3>
+        <p>Demo Projects</p>
+      </div>
+      <div class="fact reveal">
+        <h3 class="count" data-to="7" data-suffix="">0</h3>
+        <p>Languages Learned</p>
+      </div>
+      <div class="fact reveal">
+        <h3>PhD</h3>
+        <p>Qualification</p>
+      </div>
+      <div class="fact reveal">
+        <h3 class="count" data-to="100" data-suffix="%">0</h3>
+        <p>Love for Learning</p>
+      </div>
+    </div>
+
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-head">Web Development<span>+</span></button>
+        <div class="acc-body">
+          <p>I design neat, responsive pages with HTML, CSS and JavaScript that work on computers and phones.</p>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Data Analysis<span>+</span></button>
+        <div class="acc-body">
+          <p>I turn raw data into clear findings and design databases that keep information organised.</p>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Robotics<span>+</span></button>
+        <div class="acc-body">
+          <p>I have hands-on experience in robotics and enjoy mixing creativity with technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="light">
+    <h2 class="reveal">My Skills</h2>
+    <div class="skill-list">
+
+      <div class="skill reveal">
+        <p>HTML <b>0%</b></p>
+        <div class="bar"><div class="fill" data-level="85"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <p>CSS <b>0%</b></p>
+        <div class="bar"><div class="fill" data-level="80"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <p>Database Design <b>0%</b></p>
+        <div class="bar"><div class="fill" data-level="70"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <p>Creativity <b>0%</b></p>
+        <div class="bar"><div class="fill" data-level="70"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <p>Other Languages <b>0%</b></p>
+        <div class="bar"><div class="fill" data-level="90"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="reveal">My Projects</h2>
+    <div class="slider reveal">
+
+      <div class="slide">
+        <img src="project1.jpg" alt="Personal Blog">
+        <div class="caption">
+          <h3>Personal Blog</h3>
+          <p>A simple blog page with a header, posts and a sidebar. Made to practice layouts.</p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="project2.jpg" alt="Restaurant Website">
+        <div class="caption">
+          <h3>Restaurant Website</h3>
+          <p>A tasty looking landing page with a menu section, pictures and contact details.</p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="project3.png" alt="Weather Page Design">
+        <div class="caption">
+          <h3>Weather Page Design</h3>
+          <p>A clean weather page design with cards that show the temperature for each day.</p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+
+      <button class="arrow prev" aria-label="Previous project">&#10094;</button>
+      <button class="arrow next" aria-label="Next project">&#10095;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="light">
+    <h2 class="reveal">Contact Me</h2>
+    <p class="reveal">Want to work together or just say hello? Send me a message.</p>
+    <div class="contact-info reveal">
+      <p>Email: ahmadibraheem6161@email.com</p>
+      <p>Phone: +92 300 0000000</p>
+      <p>Location: Wah Cantt, Pakistan</p>
+    </div>
+    <a href="#sent" class="button">Send Email</a>
+
+    <div id="sent" class="message">
+      <div class="message-box">
+        <h3>Email Sent!</h3>
+        <p>Your email has been sent to Ahmad Ibraheem.</p>
+        <a href="#contact" class="button">Close</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ahmad Ibraheem. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
